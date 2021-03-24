@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'HappyTimes'; /*a name to be used later*/
+    src: url('fonts/happy-times-NG_regular_master_web.woff');
+}
+
+* {
+    font-family: 'HappyTimes';
+    color: black;
+    text-shadow:
+   -1px -1px 5px #fff,  
+    1px -1px 5px #fff,
+    -1px 1px 5px #fff,
+     1px 1px 5px #fff;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slideshow {
+
+}
+  
+.slide {
+    width: auto;
+  }
+
+.friso {
+    height: 100vh;
+    width: auto;
+}
+
+.placeholder {
+    height: 100vh;
+    width: 50vw;
+}
+
+#artist_info {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 98%;
+    width: 30%;
+    max-width: 450px;
+    pointer-events: none;
+    opacity: 10%;
+    transition: 0.2s;
+}
+
+#artist_info:hover {
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+
+#legenda {
+    font-size: 18px;
+    width: 100%; 
+    pointer-events: all;
+}
+
+#thumbnail {
+    pointer-events: all;
+}
+
+
+.vertical {
+    width: 30vw;
+    max-width: 325px;
+    height:auto;
+}
+
+.horizontal {
+    height: 30vw;
+    max-height: 325px;
+    width: auto;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+
+    #artist_info {
+        top: 5px;
+        left: 5px;
+        width: 80%;
+        opacity: 100%;
+    }
+
+    #thumbnail {
+        position: absolute;
+        bottom: 20px;
+        pointer-events: none;
+    }
+
+    .vertical {
+        width: 40vw;
+        height: auto;
+    }
+    
+    .horizontal {
+        height: 40vw;
+        width: auto;
+    }
+    
+
+    #legenda {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        pointer-events: none;
+    }
+
+  }
