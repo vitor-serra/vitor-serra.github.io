@@ -9,6 +9,26 @@ document.body.addEventListener('touchmove', function(event) {
     event.preventDefault();
 });
 
+
+    var track = document.getElementById('track');
+    
+    var controlBtn = document.getElementById('play-pause');
+    
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            controlBtn.innerHTML = "PAUSE SOUND";
+        
+        } else { 
+            track.pause();
+             controlBtn.innerHTML = "PLAY SOUND";
+        }
+    }
+    
+    
+    controlBtn.addEventListener("click", playPause);
+    
+
 // Play with this value to change the speed
 let tickerSpeed = 2;
 

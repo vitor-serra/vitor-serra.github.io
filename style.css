@@ -13,6 +13,7 @@
      1px 1px 5px #fff;
 }
 
+
 body {
     margin: 0;
     height: 100%;
@@ -28,6 +29,19 @@ body {
 
 .slideshow {
 
+}
+
+audio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#play-pause {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
 }
   
 .slide {
@@ -85,7 +99,14 @@ body {
     width: auto;
 }
 
-
+#creditos {
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    transform-origin: 100% 100%;
+    transform: rotate(90deg);
+}
 
 @media only screen and (max-width: 720px) {
 
@@ -118,6 +139,22 @@ body {
         width: 100%;
         right: 0;
         pointer-events: none;
+    }
+
+    #creditos {
+        width: 150px;
+        right: 100%;
+        bottom: 40%;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #play-pause {
+        transform-origin:50% 50%;
+        transform: rotate(90deg);
+        text-align: center;
+        top: 45%;   
+        right: -45px;
     }
 
   }
